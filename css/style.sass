@@ -1,0 +1,296 @@
+*
+    margin: 0
+    padding: 0
+    list-style-type: none
+    text-decoration: none
+
+$main-color: black
+$second-color: #F2F2F2
+$third-color: #842C68
+$fourth-color: #C4C4C4
+$font-size-1: 48px
+
+.wrapper
+    width: 100%
+
+header
+    nav
+        width: 100%
+        height: 48px
+        z-index: 5000
+        .container-fluid
+            background-color: #282222
+            
+    .navbar-collapse
+        height: 62px
+        display: flex
+        justify-content: space-around
+        align-items: baseline
+        left: 10px
+        color: $second-color
+        .navbar-nav
+            margin-left: 15px
+            color: $second-color
+            height: 70px
+
+        .navbar-nav
+            align-items: center
+            .nav-item
+                .nav-link
+                    color: $second-color
+                    font-size: 18px
+                .nav-link:hover
+                    color: #e93232
+
+        .logo
+            width: 150px
+            height: 30px
+            border-radius: 2px
+            text-align: center
+            margin-top: 8px
+            margin-left: 20px
+            font-family: fantasy
+            font-size: 35px
+            line-height: 20px
+            text-decoration: none
+            color: #d9c1c1
+            background: linear-gradient(to right, #ef0021, #414cb9, #f07306)
+            text-shadow: 27px 14px
+            
+        .collapse
+            color: $second-color
+        .items
+            width: 250px
+            display: flex
+            justify-content: space-around
+            i
+                color: $second-color 
+                width: 25px
+                height: 15px
+            i:hover
+                color: #e93232
+                
+
+    .firstText
+        width: 100%
+        text-align: center
+        line-height: 30px
+        padding-bottom: 10px
+        button
+            width: 150px
+            height: 45px
+            background: $third-color
+            border: none
+            border-radius: 5px
+            a
+                text-decoration: none
+                list-style-type: none
+                color: $second-color
+    
+        button:hover
+            background-color: #9b0a70
+
+
+header
+    width: 100%
+    height: 600px
+    background-color: $second-color
+    .slider
+        width: 100%
+        height: 300px
+        display: flex
+        justify-content: center
+        justify-items: center
+        .clicks
+            width: 70%
+            margin: auto
+            display: flex
+            justify-content: space-between
+            .btns
+                font-size: 35px
+                background: #ebd0d0
+                opacity: 0.5
+                border-radius: 10px
+
+
+            .btns:hover
+                color: blue
+                background: #ad9797
+                opacity: 0.5
+
+
+        .sldimg
+            width: 72%
+            height: 300px
+            border-radius: 10px
+            margin: auto
+            position: absolute
+            .sliderimg
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+                    border-radius: 10px
+        
+
+section
+    width: 100%
+    height: 800px
+    .text1
+        display: flex
+        justify-content: center
+
+    .sectpic
+        width: 72%
+        height: 700px
+        margin: auto
+        
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: space-between
+        div
+            width: 47%
+            height: 340px
+            border-radius: 10px
+            p
+                font-size: 30px
+            a
+                font-size: 20px
+                color: black
+            
+        img
+            width: 100%
+            height: 74%
+            border-radius: 10px
+            
+article
+    width: 100%
+    background-color: $second-color
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    .container1
+        width: 72%
+        height: 500px
+        display: flex
+        justify-content: space-between
+        .contents
+            width: 32%
+            height: 490px
+            border-radius: 10px
+            img
+                width: 100%
+                height: 320px
+                border-radius: 10px
+            b
+                font-size: 20px
+            p
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            a
+                font-size: 20px
+                color: $main-color
+    .container2
+        width: 72%
+        height: 420px
+        display: flex
+        justify-content: space-between
+        .blackFriday
+            width: 65%
+            height: 350px
+            img
+                width: 100%
+                height: 100%
+                border-radius: 10px
+        .sale
+            width: 35%
+            height: 350px
+            border-radius: 10px
+            background-color: $fourth-color
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            span
+                font-size: $font-size-1
+            p
+                font-size: 38px
+                color: #842C68
+
+footer
+    width: 100%
+    background: black
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    color: white
+
+    .footerA
+        width: 72%
+        margin-top: 25px
+        border-bottom:  3px solid white
+        display: flex
+        justify-content: center
+        .firstUL
+            display: flex
+            margin-right: 20px
+            align-items: center
+            li
+                margin: 15px
+                a
+                    text-decoration: none
+                    color: $second-color
+        ul
+            display: flex
+            align-items: center
+            margin-right: 70px
+            li
+                margin: 15px
+                a
+                    text-decoration: none
+                    color: $second-color
+        .flag
+            width: 18%
+            border: 1px solid black
+            display: flex
+            justify-content: center
+            align-items: baseline
+            margin-right: 55px
+            .flagA
+                width: 15px
+                height: 35px
+                border-radius: 27%
+                margin: 1px
+                background: red
+                transform-origin: 0 100%
+                transform: matrix(1, 0, -0.5, 1, 0, 0)
+            .flagB
+                width: 15px
+                height: 35px
+                border-radius: 27%
+                margin: 2px
+                background: blue
+                transform-origin: 0 100%
+                transform: matrix(1, 0, -0.5, 1, 0, 0)
+            .flagC
+                width: 15px
+                height: 35px
+                border-radius: 27%
+                margin: 2px
+                background: orange
+                transform-origin: 0 100%
+                transform: matrix(1, 0, -0.5, 1, 0, 0)
+            i
+                padding-left: 25px
+                font-size: 45px
+                color: $second-color
+    .footerB
+        width: 72%
+        display: flex
+        justify-content: center
+        margin-top: 25px
+        i
+            font-size: 40px
+            color: white
+            margin: 15px
